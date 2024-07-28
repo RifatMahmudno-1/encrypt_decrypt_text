@@ -17,7 +17,9 @@ export default defineConfig({
   },
   plugins: [react()],
   build: {
-    assetsInlineLimit: 0
+    assetsInlineLimit: 0,
+    outDir: join(clientDir, './dist'),
+    emptyOutDir: true
   },
   resolve: {
     alias: [{ find: '@', replacement: join(clientDir, './src') }]
