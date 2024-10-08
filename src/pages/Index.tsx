@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Page() {
   return (
     <div className="flex gap-2">
@@ -8,11 +10,11 @@ function Page() {
           standrad encryption algorithm. This algorithm uses a key to encrypt
           text. The same key is required to decrypt that text.
         </p>
-        <a
+        <Link
           className="ml-auto mt-1 block w-fit justify-end rounded bg-cyan-300 px-2 py-1 transition-[background] hover:bg-cyan-400"
-          href="/aes">
+          to="/aes">
           Encrypt & Decrypt
-        </a>
+        </Link>
       </div>
     </div>
   )
